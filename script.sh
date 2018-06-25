@@ -1,0 +1,12 @@
+
+source activate tensorflow
+echo "Convert input to "$1
+if [ "$1" = "M" ]; then
+	        python convert.py case1_5_male
+else
+	        python convert.py case1_5
+fi
+
+source deactivate
+
+

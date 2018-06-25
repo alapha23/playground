@@ -1,0 +1,7 @@
+/home/gao/Documents/tiny_networking/cmake/test1/build/CMakeFiles/install/strip.dir
+/home/gao/Documents/tiny_networking/cmake/test1/build/CMakeFiles/install/local.dir
+/home/gao/Documents/tiny_networking/cmake/test1/build/CMakeFiles/rebuild_cache.dir
+/home/gao/Documents/tiny_networking/cmake/test1/build/CMakeFiles/myapp.dir
+/home/gao/Documents/tiny_networking/cmake/test1/build/CMakeFiles/edit_cache.dir
+/home/gao/Documents/tiny_networking/cmake/test1/build/CMakeFiles/install.dir
+/home/gao/Documents/tiny_networking/cmake/test1/build/CMakeFiles/list_install_components.dir
