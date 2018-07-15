@@ -1,3 +1,4 @@
+set(CMAKE_LEGACY_CYGWIN_WIN32 0)
 # Add executable called "helloDemo" that is built from the source files
 # "demo.c" and "demo_b.c". The extensions are automatically found.
 add_executable (helloDemo demo.c )

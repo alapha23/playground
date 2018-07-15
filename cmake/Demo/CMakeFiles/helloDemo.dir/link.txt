@@ -1,1 +1,0 @@
-/usr/bin/cc   -rdynamic CMakeFiles/helloDemo.dir/demo.c.o  -o helloDemo ../Hello/libHello.a 

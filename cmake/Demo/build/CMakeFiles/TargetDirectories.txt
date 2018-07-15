@@ -1,0 +1,3 @@
+/home/alaph/playground/cmake/Demo/build/CMakeFiles/edit_cache.dir
+/home/alaph/playground/cmake/Demo/build/CMakeFiles/helloDemo.dir
+/home/alaph/playground/cmake/Demo/build/CMakeFiles/rebuild_cache.dir

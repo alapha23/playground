@@ -1,0 +1,1 @@
+/usr/bin/cc    -Wl,--enable-auto-import CMakeFiles/helloDemo.dir/demo.c.o  -o helloDemo.exe -Wl,--out-implib,libhelloDemo.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lHello 

@@ -1,8 +1,0 @@
-/home/gao/Documents/tiny_networking/cmake/CMakeFiles/rebuild_cache.dir
-/home/gao/Documents/tiny_networking/cmake/CMakeFiles/edit_cache.dir
-/home/gao/Documents/tiny_networking/cmake/Hello/CMakeFiles/edit_cache.dir
-/home/gao/Documents/tiny_networking/cmake/Hello/CMakeFiles/rebuild_cache.dir
-/home/gao/Documents/tiny_networking/cmake/Hello/CMakeFiles/Hello.dir
-/home/gao/Documents/tiny_networking/cmake/Demo/CMakeFiles/rebuild_cache.dir
-/home/gao/Documents/tiny_networking/cmake/Demo/CMakeFiles/edit_cache.dir
-/home/gao/Documents/tiny_networking/cmake/Demo/CMakeFiles/helloDemo.dir
