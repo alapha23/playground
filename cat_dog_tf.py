@@ -564,7 +564,7 @@ class TF_HandyTrainer():
         if self.sess is None:
             config = tf.ConfigProto()
             config.gpu_options.per_process_gpu_memory_fraction = FLAGS.frac
-            config.gpu_options.allow_growth = FLAG.allow_growth
+            config.gpu_options.allow_growth = FLAGS.allow_growth
             self.sess = tf.Session(config=config)
             #self.sess = tf.Session()
 
