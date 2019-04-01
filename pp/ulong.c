@@ -5,7 +5,7 @@ void print_bit_iter(unsigned long x, int n)
     int i = n - 1;
     for(;i >= 0; i--) {
         // starting from MSB
-        unsigned long truncate = 0x1 << i;
+        unsigned long truncate = 0x1LU << i;
         if((x & truncate) == 0)
             printf("0");
         else printf("1");
@@ -18,7 +18,7 @@ void print_bit_rec(unsigned long x, int n)
     int i = n - 1;
     for(;i >= 0; i--) {
         // starting from MSB
-        unsigned long truncate = 0x1 << i;
+        unsigned long truncate = 0x1LU << i;
         if((x & truncate) == 0)
             printf("0");
         else printf("1");

@@ -5,10 +5,10 @@ void print_bit_iter(long x, int n)
     int i = n - 1;
     for(;i >= 0; i--) {
         // starting from MSB
-        long truncate = 0x1 << i;
+        long truncate =  0x1L << i;
         if((x & truncate) == 0)
             printf("0");
-        else printf("1");
+        else {printf("1"); }
     }
     printf(" ");
 }
@@ -19,7 +19,7 @@ void print_bit_rec(long x, int n)
     int i = n - 1;
     for(;i >= 0; i--) {
         // starting from MSB
-        long truncate = 0x1 << i;
+        long truncate = 0x1L << i;
         if((x & truncate) == 0)
             printf("0");
         else printf("1");
