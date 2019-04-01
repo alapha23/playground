@@ -13,7 +13,6 @@ void print_bit_iter(long x, int n)
     printf(" ");
 }
 
-
 void print_bit_rec(long x, int n)
 {
     int i = n - 1;
