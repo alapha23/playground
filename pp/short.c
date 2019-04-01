@@ -30,9 +30,7 @@ void print_bit_rec(short x, int n)
 int main() {
     short x;
     scanf("%d", &x);
-
     print_bit_iter(x, 16);
     print_bit_rec(x, 16);
-
     return 0;
 }
