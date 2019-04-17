@@ -5,7 +5,14 @@
 int classify(int x);
 
 void map(int numbers[], int size, int classes[]) {
-  /* Implement Here */
+  int temp;
+  int c = 0;
+  while(c < size)
+  {
+    temp = classify(numbers[c]);
+    classes[temp] = classes[temp] +1;
+    c++;
+  }
 }
 
 

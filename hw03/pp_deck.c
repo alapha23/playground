@@ -4,7 +4,34 @@
 
 void sort_deck(char shapes[], int numbers[], int num_cards)
 {
-  /* Implement Here */
+  int iter = 1;
+  int temp = 0;
+  int key;
+
+  for(; iter < num_cards; iter++) {
+    key = numbers[iter];
+    char key_c = shapes[iter];
+    int k = iter-1;
+    while(k >= 0 && numbers[k] >= key) {
+      // ascii S > D, precedence D higher
+      if(numbers[k]==key) { 
+        if(shapes[k] < key_c) // numbers[k] > key
+        {
+          numbers[k +1] = numbers[k];
+          shapes[k + 1] = shapes[k];
+          k = k-1; 
+        } else break;
+      } else {
+      numbers[k +1] = numbers[k];
+      shapes[k + 1] = shapes[k];
+      k = k-1;
+      }
+    }
+    numbers[k+1] = key;
+    shapes[k+1] = key_c;
+  }
+    
+
 }
 
 /* Do not touch below */
