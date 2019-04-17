@@ -5,7 +5,32 @@
 
 double calculate_angle(double A[], double B[], int dim) 
 {
-  /* Implement Here */
+  double dot_product = 0.0;
+  double mod_A = 0.0;
+  double mod_B = 0.0;
+  double mod_A_B = 0.0;
+  double radian = 0.0;
+  double degree = 0.0;
+  int iter = dim-1;
+
+  for(; iter >= 0; iter--) {
+    dot_product += A[iter] * B[iter];
+  }
+  for(; iter < dim; iter++) {
+    mod_A += A[iter] * A[iter];
+  }
+  mod_A = sqrt(mod_A);
+  for(; iter >=0; iter--) {
+    mod_B += B[iter] * B[iter];
+  }
+  mod_B = sqrt(mod_B);
+
+//  printf("cos(Theta) = %f\n", dot_product / (mod_A * mod_B));
+  radian = acos(dot_product / (mod_A * mod_B));
+  degree = 180*(radian / M_PI);
+  if(0>degree) degree = -degree;
+  if(180<degree) degree = 360 - degree;
+  return degree;
 }
 
 
