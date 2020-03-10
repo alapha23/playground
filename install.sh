@@ -1,9 +1,11 @@
 #! /bin/bash
 
-#if [ "$EUID" -eq 0 ];
-#  then echo "Usage: sudo bash install.sh"
-#  exit 0
-#fi
+# Deploy python3 environment on centos
+
+if [ "$EUID" -eq 0 ];
+  then echo "Usage: sudo bash install.sh"
+  exit 0
+fi
 
 yes | yum update
 yes | yum install gcc gcc-c++ git vim autoconf make cmake
