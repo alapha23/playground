@@ -1,9 +1,9 @@
 #! /bin/bash
 
-if [ "$EUID" -eq 0 ];
-  then echo "Usage: sudo bash install.sh"
-  exit 0
-fi
+#if [ "$EUID" -eq 0 ];
+#  then echo "Usage: sudo bash install.sh"
+#  exit 0
+#fi
 
 yes | yum update
 yes | yum install gcc gcc-c++ git vim autoconf make cmake
@@ -57,6 +57,18 @@ else
     exit 1
 fi
 
-# Install Intel MKL
+# Install slurm
+
+# TODO: need configurations including master nodes, compute nodes and nfs settings.
+# yes | yum install openssl openssl-devel pam-devel \
+#  numactl numactl-devel hwloc hwloc-devel lua lua-devel readline-devel rrdtool-devel ncurses-devel man2html libibmad libibumad \
+#  rpm-build munge munge-devel perl
+# cd /tmp
+# wget https://download.schedmd.com/slurm/slurm-20.02.0.tar.bz2
+# rpmbuild -ta slurm-20.02.0.tar.bz2
+# cd -
+
+# TODO: Install PBS
+# TODO: Install Intel MKL
 
 
