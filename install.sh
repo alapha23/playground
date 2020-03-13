@@ -2,7 +2,7 @@
 
 # Deploy python3 environment on centos
 
-if [ "$EUID" -eq 0 ];
+if [ "$EUID" -ne 0 ];
   then echo "Usage: sudo bash install.sh"
   exit 0
 fi
@@ -28,21 +28,20 @@ echo "python3 already installed"
 yes | pip3 install pipenv virtualenv numpy scipy pyfftw
 yes | pip3 install jupyter ipython
 
-if [ -x "$(command -v virtualenv)" ]; then
+if ! [ -x "$(command -v virtualenv)" ]; then
     echo "Successfully installed virtualenv"
 else
     echo "Failed to install virtualenv"
     exit 1
 fi
 
-if [ -x "$(command -v pipenv)" ]; then
+if ! [ -x "$(command -v pipenv)" ]; then
     echo "Successfully installed pipenv"
 else
     echo "Failed to install pipenv"
     exit 1
 fi
 
-# TODO: verify the successfull installation of below packages
 echo "Successfully installed numpy"
 echo "Successfully installed SciPy"
 echo "Successfully installed pyfftw"
@@ -59,18 +58,4 @@ else
     exit 1
 fi
 
-# Install slurm
-
-# TODO: need configurations including master nodes, compute nodes and nfs settings.
-# yes | yum install openssl openssl-devel pam-devel \
-#  numactl numactl-devel hwloc hwloc-devel lua lua-devel readline-devel rrdtool-devel ncurses-devel man2html libibmad libibumad \
-#  rpm-build munge munge-devel perl
-# cd /tmp
-# wget https://download.schedmd.com/slurm/slurm-20.02.0.tar.bz2
-# rpmbuild -ta slurm-20.02.0.tar.bz2
-# cd -
-
-# TODO: Install PBS
-# TODO: Install Intel MKL
-
-
+echo "Python environment deployment completed."
